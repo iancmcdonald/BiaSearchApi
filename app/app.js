@@ -11,14 +11,15 @@ const pythonShell = require("python-shell");
 const app = express();
 
 // APP CONFIG
-// mongoose.connect("mongodb://localhost/news_app");
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(expressSanitizer());
 app.use(methodOverride("_method"));
 app.use(cors());
 
+app.use(express.static("dist"));
+
 app.get("/", function (req, res) {
-    res.send("Youve hit index!")
+    res.render("index");
 });
 
 app.get("/api", function (req, res) {
