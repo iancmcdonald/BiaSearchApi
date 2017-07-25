@@ -1,0 +1,23 @@
+{
+  "name": "biasearchapi",
+  "version": "1.0.0",
+  "description": "article search api for biasearch",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "biasearch"
+  ],
+  "author": "Ian McDonald & Tristan Burke",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "cors": "^2.8.4",
+    "express": "^4.15.3",
+    "express-sanitizer": "^1.0.2",
+    "method-override": "^2.3.9",
+    "python-shell": "^0.4.0",
+    "request": "^2.81.0"
+  }
+}
