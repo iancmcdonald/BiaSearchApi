@@ -29,13 +29,14 @@ app.get("/api", function (req, res) {
 
     let options = {
         mode: 'text',
-        pythonPath: '/home/ubuntu/.virtualenvs/biasearch/bin/python',
-        scriptPath: '/home/ubuntu/BiaSearchApi/app',
+        pythonPath: '/home/ian/.virtualenvs/biasearch/bin/python',
+        scriptPath: '/home/ian/BiaSearchApi/app',
         args: article
     };
 
     pythonShell.run('exp_get_matches.py', options, function (err, results) {
         if (err) console.log("PYTHON ERROR OCCURRED FETCHING ARTICLES");
+        // if (err) throw err;
 
         // results is an array consisting of messages collected during execution
         let result_articles = [];
