@@ -48,6 +48,7 @@ app.get("/api", function (req, res) {
                 curr_article.url = results[++i];
                 curr_article.imageUrl = results[++i];
                 curr_article.source = results[++i];
+                curr_article.text = results[++i];
                 result_articles.push(curr_article);
             }
 

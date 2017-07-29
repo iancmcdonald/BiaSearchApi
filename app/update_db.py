@@ -4,6 +4,7 @@ from pymongo import MongoClient
 
 def main():
     client = MongoClient()
+    client.drop_database('article_database')
 
     db = client.article_database
 

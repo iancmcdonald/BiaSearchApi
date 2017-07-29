@@ -49,7 +49,7 @@ def main():
     for c in collections:
         in_doc = get_doc(in_url)
         match = get_match(c, in_doc)
-        results = [match["title"], match["url"], match["image"], collections_names[i]]
+        results = [match["title"], match["url"], match["image"], collections_names[i], match["text"]]
         for r in results:
             print(r)
         i += 1
